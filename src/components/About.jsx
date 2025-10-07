@@ -1,0 +1,41 @@
+import { NavLink } from "react-router-dom"
+import CodingSkills from "./CodingSkills"
+
+const About = () => {
+
+   
+  return (
+    <>
+    <section className="section">
+    <div className="md:w-3/4 mx-auto" id="About">
+      <div className="">
+        <h2 className="text-center md:text-2xl text-lg ">About Me</h2>
+      </div>
+      <div className="md:flex bg-[#1E201E] w-full">
+        <div className="items-center bg-[#B99470] md:w-[30%] p-4">
+          <div>
+            <h3 className="text-[#04060f] text-center my-4 text-xl font-subheading">SKILLS</h3>
+          </div>
+          <div>
+            <CodingSkills />
+          </div>
+        </div>
+
+        <div className="mx-8 py-5 md:py-8">
+          <div className="my-4">
+            <p className="text-md md:text-xl">
+            I am a dedicated and self-driven individual with a lot of ambitions in the technological field. The urge to enhance people&apos;s lives through technology drives me towards amassing knowledge and skills. Striving towards innovating systems that are user friendly and efficient. I am developing systems using Javascript, NodeJS utilizing the ExpressJS framework, MySQL, and the ReactJS.
+            </p>
+          </div>
+          <div className="text-center md:text-end pt-4">
+            <NavLink to="/work_experience" onClick={()=> window.scrollTo(0,0)} className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </>
+  )
+}
+
+export default About
