@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 
+// eslint-disable-next-line react/prop-types
 const BuildWithMe = ({ submit, result }) => {
 
 
