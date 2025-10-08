@@ -1,19 +1,22 @@
 import { Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
-// import NavHeader from './components/NavHeader';
-// import Footer from './components/Footer';
-
-import Home from './pages/Homepage';
-import ExperiencePage from './pages/ExperiencePage';
-import ViewProjectPage from './pages/ViewProjectPage';
 import MainLayout from './layouts/MainLayout';
-import WorkWithMePage from './pages/WorkWithMePage';
+
+const Home = lazy(()=> import('./pages/Homepage'));
+const ExperiencePage = lazy(()=> import("./pages/ExperiencePage"))
+const ViewProjectPage = lazy(()=> import("./pages/ViewProjectPage"))
+const WorkWithMePage = lazy(()=> import("./pages/WorkWithMePage"))
+
+
+import Loading from './components/Loading';
 
 const App = () => {
   return (
     <>
       
     {/* <NavHeader />  */}
+        <Suspense fallback={<Loading />}>
           <Routes>
             <Route path='/' element={<MainLayout />} >
               <Route index element={<Home />} /> 
@@ -21,7 +24,12 @@ const App = () => {
               <Route path="/project/:id" element={<ViewProjectPage />} />
               <Route path='/define_the_project' element={<WorkWithMePage />} />
             </Route>
+
+            <Route path='/'>
+               <Route path='/test' element={<Loading/>} />
+            </Route>
           </Routes>
+        </Suspense>
     {/* <Footer /> */}
   
     </>
