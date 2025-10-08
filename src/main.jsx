@@ -6,10 +6,12 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import PortfolioContextProvider from './context/PortfolioContext.jsx'
 
+ const repoName = 'ouma-portfolio';
+
 createRoot(document.getElementById('root')).render(
   
     <StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename={`/${repoName}/`}>
         <PortfolioContextProvider>
           <App />
         </PortfolioContextProvider>   
