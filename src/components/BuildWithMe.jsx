@@ -20,7 +20,7 @@ const BuildWithMe = ({ submit, result }) => {
         <div>project category</div>
         <div className=" grid grid-flow-row gap-1 m-3">
           <h3 className="">Briefly describe your project.</h3>
-          <textarea name="" id="" placeholder="" className="bg-[#dcebe8] text-[#0f112e] w-full md:h-[150px] rounded-md"></textarea>
+          <textarea name="" id="" placeholder="" className="bg-[#dcebe8] text-[#0f112e] px-3 w-full md:h-[150px] rounded-md"></textarea>
         </div>
         
         <div className="flex justify-center">

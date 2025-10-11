@@ -28,17 +28,17 @@ const ViewProjectPage = () => {
           <div className="m-8">
             <div>Project Hero Section</div>
             <div>
-              <p className="text-xl md:text-2xl">{project.title}</p>
+              <p className="text-2xl md:text-3xl">{project.title}</p>
               <div>objective</div>
             </div>
             
             <div>
-              <div>Project Scope</div>
-              <p>{project.description}</p>
-            </div>
-            <div>
-              Project documentation
-            </div>
+              {project.description.map((para, i)=>(
+                <p key={i} className="text-xl mb-1.5">
+                  {para}
+                </p>
+              ))}
+            </div> 
           
           </div>
         )}

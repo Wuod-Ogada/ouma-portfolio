@@ -6,10 +6,10 @@ const About = () => {
    
   return (
     <>
-    <section className="section">
+    <section className="section py-10">
     <div className="md:w-3/4 mx-auto" id="About">
       <div className="">
-        <h2 className="text-center md:text-2xl text-lg ">About Me</h2>
+        <h2 className="text-center text-2xl md:text-3xl  ">About Me</h2>
       </div>
       <div className="md:flex bg-[#1E201E] w-full">
         <div className="items-center  bg-[#B99470] p-4 md:w-[30%]">
@@ -24,7 +24,7 @@ const About = () => {
         <div className="mx-8 py-5 md:py-8">
           <div className="my-4">
             <p className="text-md md:text-xl">
-            I am an entry-level developer with a background in IT Technical Support. The urge to enhance people&apos;s lives through technology motivates me to pursue programming knowledge and skills to innovate systems that are user-friendly and efficient. I am developing systems using Javascript, NodeJS utilizing the ExpressJS framework, MySQL, and ReactJS for the frontend.
+            I am an entry-level developer with a background in IT Technical Support. The urge to enhance people&apos;s lives through technology motivates me to pursue knowledge and enhance my skills programming. I aspire to innovate systems that are user-friendly and efficient. I am currently developing systems using Javascript, NodeJS utilizing the ExpressJS framework, MySQL, and ReactJS for the frontend.
             </p>
           </div>
           <div className="text-center md:text-end pt-4">

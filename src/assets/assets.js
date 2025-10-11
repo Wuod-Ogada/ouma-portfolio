@@ -1,5 +1,6 @@
 import logo from "../assets/Images/logo.png";
 import laki2 from "../assets/Images/laki2.png";
+import laki3 from "../assets/Images/laki3.png";
 import laki11 from "../assets/Images/laki11.png";
 import mysql2 from "../assets/Images/mysql2.png";
 import jscript from "../assets/Images/jscript.png";
@@ -14,7 +15,7 @@ import gear from "../assets/Images/gear.jpg";
 import trashcan from "../assets/Images/trashcan.png";
 import wallet from "../assets/Images/wallet.jpg";
 
-export { logo, laki2, laki11, mysql2, jscript, nodejs, react, rating2, rating3, driver, ohs, supportrep, gear, trashcan, wallet }
+export { logo, laki2, laki3, laki11, mysql2, jscript, nodejs, react, rating2, rating3, driver, ohs, supportrep, gear, trashcan, wallet }
 
 export const codingSkills = [
   {
@@ -45,8 +46,8 @@ export const projectData = [
     image: gear,
     title: "Makina: Autosolutions",
     intro: "An e-commerce platform for vehicle spare parts, accessories, and vehicle servicing services.",
-    description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. It enable client to interact with spare part merchants and vehicle maintence service providers. The intention is to improve the experience of vehicle owners while sourcing for services.",
-    "Clients are able to search, order, and pre-order spare parts or any other vehicle accessory. They can schedule for a shop visit to collect the item or request for deliveries. The platform will facilite transparency and client protection, through online transactions. The item listings will facilitate searching for items basing on part number, chasis number, vehicle model, and compatibility.",
+    description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. The intention is to improve the experience of vehicle owners while sourcing for services.",
+    "Clients are able to search, order, and pre-order spare parts and other vehicle accessory. They can schedule for a shop visit to collect the item or request for deliveries. The platform will facilite transparency and client protection, through online transactions. The item listings will facilitate searching for items basing on part number, chasis number, vehicle model, and compatibility.",
     "For vehicle servicing and maintenance, the platform will enable access to three types of services. Shop visits: which clients will schedule and book to have their vehicles serviced from our service bay. Pick-up and drop-off: This service allows clients to schedule and book for their cars to be collected by a flatbed, taken to the service centre, and returned upon completion. Finally, On-site servicing: Clients will be able to book and schedule for mechanics to visit their location to service their vehicles at their convinience."]
   },
   {
@@ -66,7 +67,9 @@ export const projectData = [
     image: wallet,
     title: "Fulus",
     intro: "An application intended to guide users on financial management and investment plans",
-    description: "The appication will have two plans. The free and the paid plan."
+    description: [
+      "The appication will have two plans. The free and the paid plan."
+    ]
   },
 ]
 

@@ -24,10 +24,6 @@ const App = () => {
               <Route path="/project/:id" element={<ViewProjectPage />} />
               <Route path='/define_the_project' element={<WorkWithMePage />} />
             </Route>
-
-            <Route path='/'>
-               <Route path='/test' element={<Loading/>} />
-            </Route>
           </Routes>
         </Suspense>
     {/* <Footer /> */}

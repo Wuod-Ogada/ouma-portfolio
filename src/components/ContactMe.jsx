@@ -38,7 +38,7 @@ const ContactMe = () => {
       <ToastContainer />
       
       <div className="" id="Contact_me">
-        <h2 className="text-lg text-center font-medium md:text-2xl">Contact Me!</h2>
+        <h2 className="text-xl text-center font-medium md:text-3xl">Contact Me!</h2>
         <div className=" ">
           <form onSubmit={onSubmit} className="mx-5 grid grid-flow-row gap-4 md:w-3/6 md:mx-auto">
             <div>
