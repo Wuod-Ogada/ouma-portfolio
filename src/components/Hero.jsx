@@ -11,9 +11,9 @@ const Hero = () => {
    <>
     <section className="section flex items-center">
       <AnimatePresence>
-      <div className="md:w-[90%] md:mx-auto md:flex justify-between h-[70vh] ">
+      <div className="md:w-[90%] md:mx-auto md:flex justify-between">
         <motion.div
-        className="block md:hidden bg-[#B99470] w-[70%] h-[60%] mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
+        className="block md:hidden bg-[#B99470] w-[280px] h-[380px] mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
           <img src={laki11} alt="" className="w-full h-full object-cover" />
         </motion.div>
         <motion.div className="mx-5 flex flex-col justify-center md:w-[60%] gap-5 mb-[20px]">
