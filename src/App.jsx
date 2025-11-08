@@ -26,7 +26,7 @@ if(Loading) {
     <>
       
     {loading ? (<Loading />) : (
-      <Suspense fallback={<Loading />}>
+      <Suspense >
           <Routes>
             <Route path='/' element={<MainLayout />} >
               <Route index element={<Home />} /> 
