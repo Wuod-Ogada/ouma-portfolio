@@ -80,7 +80,7 @@ export const experiences = [
     location: "Nairobi, Kenya",
     duration: "Jan, 2022 - Feb, 2024",
     skills : [ 
-        "Customer Relations", "JavaScript", "ReactJS", "NodeJS", "Git and GitHub"
+        "Attention to details", "Error handling and End-to-End testing", "Critical thinking", "Effective communication"
     ],
     roles: [
       "Learnt and understood the core principles of web application development.",

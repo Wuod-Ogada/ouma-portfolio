@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useState } from 'react';
 
 import MainLayout from './layouts/MainLayout';
 
@@ -12,11 +12,21 @@ const WorkWithMePage = lazy(()=> import("./pages/WorkWithMePage"))
 import Loading from './components/Loading';
 
 const App = () => {
+
+
+const [loading, setLoading] = useState(true);
+
+if(Loading) {
+  setTimeout(()=>{
+    setLoading(false)
+  }, 5000)
+}
+
   return (
     <>
       
-    {/* <NavHeader />  */}
-        <Suspense fallback={<Loading />}>
+    {loading ? (<Loading />) : (
+      <Suspense fallback={<Loading />}>
           <Routes>
             <Route path='/' element={<MainLayout />} >
               <Route index element={<Home />} /> 
@@ -26,7 +36,7 @@ const App = () => {
             </Route>
           </Routes>
         </Suspense>
-    {/* <Footer /> */}
+    )}
   
     </>
   )
