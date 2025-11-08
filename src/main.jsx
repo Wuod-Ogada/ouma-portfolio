@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './app.css'
@@ -10,12 +9,11 @@ import PortfolioContextProvider from './context/PortfolioContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    <StrictMode>
       <BrowserRouter basename={`/${repoName}/`}>
         <PortfolioContextProvider>
           <App />
         </PortfolioContextProvider>   
       </BrowserRouter>
-    </StrictMode>
+
  
 )

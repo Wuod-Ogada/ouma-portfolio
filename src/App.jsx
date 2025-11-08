@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Suspense, lazy, useState, useEffect} from 'react';
+import { Suspense, lazy} from 'react';
 
 import MainLayout from './layouts/MainLayout';
 
@@ -14,7 +14,7 @@ import Loading from './components/Loading';
 const App = () => {
 
 
-const [loading, setLoading] = useState(true);
+// const [loading, setLoading] = useState(true);
 
 // if(loading) {
 //   setTimeout(()=>{
@@ -22,15 +22,13 @@ const [loading, setLoading] = useState(true);
 //   }, 5000)
 // }
 
-useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5000);
-    return () => clearTimeout(timer); // cleanup on unmount
-  }, []);
+// useEffect(() => {
+//     const timer = setTimeout(() => setLoading(false), 5000);
+//     return () => clearTimeout(timer); // cleanup on unmount
+//   }, []);
 
   return (
     <>
-      
-    {loading ? (<Loading />) : (
       <Suspense fallback={<Loading />}>
           <Routes>
             <Route path='/' element={<MainLayout />} >
@@ -41,8 +39,6 @@ useEffect(() => {
             </Route>
           </Routes>
         </Suspense>
-    )}
-  
     </>
   )
 }
