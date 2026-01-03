@@ -14,7 +14,7 @@ const navigate = useNavigate();
       <div className=' mx-5 md:w-[90%] md:flex md:justify-between md:mx-auto md:items-center text-lg font-medium'>
         <div className='mb-5'>
           <ul className='text-[#0f2542]'>
-            <li><NavLink to="/#Header">Home</NavLink></li>
+            <li><NavLink onClick={() => window.scrollTo(0, 0)} to="/#Header">Home</NavLink></li>
             <li><NavHashLink smooth to="/#About">About</NavHashLink></li>
             <li><NavLink to="/work_experience" onClick={() => window.scrollTo(0, 0)} >Work Experience</NavLink></li>
           </ul>

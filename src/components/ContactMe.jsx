@@ -45,18 +45,16 @@ const ContactMe = () => {
               <input type="hidden" name="access_key" value='{accesskey || ""}' />
             </div>
             <div className="grid grid-flow-row gap-1 ">
-              <label htmlFor="name">Your Name:</label>
               <input type="text" placeholder="Full Name" name="name" className="h-[45px] px-3 text-[#0f112e] rounded-md bg-[#dcebe8]" required/>
             </div>
             
             <div className="flex flex-col gap-1">
-              <label htmlFor="email">Email:</label>
               <input type="email" placeholder="Enter your Email" name="email" className="h-[45px] px-3 text-[#0f112e] rounded-md bg-[#dcebe8]" required/>
             </div>
             <div className="">
               <textarea placeholder="Enter your Message" name="message" className="p-3 w-full h-[128px] text-start text-[#0f112e] rounded-md bg-[#dcebe8]" required></textarea>
             </div>
-            <button type="submit" className="bg-[#b87f17e5] py-1 w-[80%] mx-auto rounded-md">{result ? result : "Send Message"}</button>
+            <button type="submit" className="bg-[#b87f17e5] py-1 w-[80%] mx-auto rounded-md text-xl">{result ? result : "Send Message"}</button>
           </form>
         </div>
         

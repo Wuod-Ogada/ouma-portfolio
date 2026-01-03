@@ -11,11 +11,11 @@ const Experience = () => {
         <div className="flex flex-col gap-7">
           {experiences.map((exp, index) => (
             <div key={index} className="">
-              <div className="flex justify-between bg-[#bb9e61e1] py-3 px-5 rounded-t-md">{/*  job title */}
+              <div className="md:flex justify-between bg-[#bb9e61e1] py-3 px-5 rounded-t-md">{/*  job title */}
                 <div >
-                  <h2 className="text-xl font-extra">{exp.title}</h2>
+                  <h2 className="text-2xl font-extra mb-2">{exp.title}</h2>
                 </div>
-                <div className="text-end font-extra">
+                <div className="text-end font-extra text-xl">
                  <div>{exp.organization}</div> 
                   <div>{exp.location}</div>
                   <div>{exp.duration}</div>
@@ -23,8 +23,8 @@ const Experience = () => {
               </div>
               <div className="bg-[#36393d] w-full"> {/*B6CBBD #36393d*/}
                 <div className="w-[90%] mx-auto pb-5 py-3">
-                  <h3 className="text-center text-[#ebecf0] text-lg font-semibold">SKILLS</h3>
-                  <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 font-extra">
+                  <h3 className="text-center text-[#ebecf0] text-xl font-semibold">SKILLS</h3>
+                  <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 font-extra text-xl">
                     {exp.skills.map((skill, index) => (
                       <li key={index}>&bull; {skill}</li>
                     ))}
@@ -32,7 +32,7 @@ const Experience = () => {
                 </div>
               </div>
               <div className="bg-[#997C70]">
-                <ul className="p-5 text-md">
+                <ul className="p-5 text-md text-xl">
                   {exp.roles.map((role, index) => (
                     <li key={index} className="pb-3" >&bull; {role}</li>
                   ))}

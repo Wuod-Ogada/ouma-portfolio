@@ -13,20 +13,6 @@ import Loading from './components/Loading';
 
 const App = () => {
 
-
-// const [loading, setLoading] = useState(true);
-
-// if(loading) {
-//   setTimeout(()=>{
-//     setLoading(false)
-//   }, 5000)
-// }
-
-// useEffect(() => {
-//     const timer = setTimeout(() => setLoading(false), 5000);
-//     return () => clearTimeout(timer); // cleanup on unmount
-//   }, []);
-
   return (
     <>
       <Suspense fallback={<Loading />}>

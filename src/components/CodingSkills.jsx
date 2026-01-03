@@ -3,11 +3,11 @@ import { codingSkills } from "../assets/assets"
 const CodingSkills = () => {
   return (
     <>
-      <div className="w-[90%] grid grid-cols-3 ">
+      <div className="grid grid-cols-3 md:flex  ">
       {codingSkills.map((codingskill, index) => (
             
-              <div key={index} className="m-3">
-                <img src={codingskill.image} alt={codingskill.skill} width={43} />
+              <div key={index} className="m-3 w-12 h-14 object-contain ">
+                <img src={codingskill.image} alt={codingskill.skill} className="w-full h-full"/>
               </div>
             
           ))}

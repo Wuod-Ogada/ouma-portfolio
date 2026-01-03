@@ -6,37 +6,40 @@ import mysql2 from "../assets/Images/mysql2.png";
 import jscript from "../assets/Images/jscript.png";
 import nodejs from "../assets/Images/nodejs.png";
 import react from "../assets/Images/react.png";
-import rating2 from "../assets/Images/rating2.png"
-import rating3 from "../assets/Images/rating3.png"
-import driver from "../assets/Images/driver.png";
-import ohs from "../assets/Images/ohs.jpg";
-import supportrep from "../assets/Images/supportrep.jpg";
 import gear from "../assets/Images/gear.jpg";
 import trashcan from "../assets/Images/trashcan.png";
 import wallet from "../assets/Images/wallet.jpg";
+import java from "../assets/Images/java.png";
+import developer from "../assets/Images/developer.png";
+import collab from "../assets/Images/collab.png";
 
-export { logo, laki2, laki3, laki11, mysql2, jscript, nodejs, react, rating2, rating3, driver, ohs, supportrep, gear, trashcan, wallet }
+export { logo, laki2, laki3, laki11, mysql2, jscript, developer, collab, nodejs, react, gear, trashcan, wallet }
 
 export const codingSkills = [
   {
     skill: "Javascript",
     image: jscript,
-    level: rating3
+    
   },
   {
     skill: "MySQL",
     image: mysql2,
-    level: rating3
+    
   },
   {
     skill: "Node JS",
     image: nodejs,
-    level: rating3
+    
   },
   {
     skill: "React JS",
     image: react,
-    level: rating3
+    
+  },
+  {
+    skill: "java",
+    image: java,
+    
   },
 ]
 
@@ -45,7 +48,7 @@ export const projectData = [
     id: "makina",
     image: gear,
     title: "Makina: Autosolutions",
-    intro: "An e-commerce platform for vehicle spare parts, accessories, and vehicle servicing services.",
+    intro: "Streamlining the network between auto-service providers and clients. The platform provides a one-stop shop where individuals access autoparts and services fitting their needs. In addition, cients can seek book and get in-touch with vetted and well-rated service providers. ",
     description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. The intention is to improve the experience of vehicle owners while sourcing for services.",
     "Clients are able to search, order, and pre-order spare parts and other vehicle accessory. They can schedule for a shop visit to collect the item or request for deliveries. The platform will facilite transparency and client protection, through online transactions. The item listings will facilitate searching for items basing on part number, chasis number, vehicle model, and compatibility.",
     "For vehicle servicing and maintenance, the platform will enable access to three types of services. Shop visits: which clients will schedule and book to have their vehicles serviced from our service bay. Pick-up and drop-off: This service allows clients to schedule and book for their cars to be collected by a flatbed, taken to the service centre, and returned upon completion. Finally, On-site servicing: Clients will be able to book and schedule for mechanics to visit their location to service their vehicles at their convinience."]
@@ -83,13 +86,16 @@ export const experiences = [
         "Attention to details", "Error handling and End-to-End testing", "Critical thinking", "Effective communication"
     ],
     roles: [
-      "Learnt and understood the core principles of web application development.",
-      "Understood the significance of Git and GitHub in deployment and collaboration.",
-      "It was essential to comprehend the significance of server-side and client-side rendering.",
-      "Build and deployed my first application.",
-      "Learned the different types of databases and the significance of a schema.",
-      "I was able to build a MySql database and facilitate the user interacting with data.",
-      "Managed to locally utilize JWT authenitication for controlled access and routing."
+      "Created simple frontend to backend connection using RESTful API",
+      "Collaborated with my mentor and managed my codebase using Git and GitHub.",
+      "Developed re-usable components to facilitate efficiency and time-management.",
+      "Build and deployed a waste-management web applicattion built on ReactJS and NodeJS.",
+      "utilized prisma for efficiency and type-safety features to maintain the postgres database",
+      "Managed to implement JWT authenitication and cookies for controlled access and routing to prevent data leaks.",
+      "utilized the contextAPI for route protection and state management.",
+      "utilized Postman and REST Client for API testing to ensure functionality and to ensure the intended data is being accessed. ",
+      "Contributed to the development of Volunteer Management Systems for the Kenya Red Cross Society and the Somaliland Red Crescent Society.",
+      "Currently, I am learning how to implement microservices and utilize tools such as Kafka, Redis, and RabbitMq"
     ],
   }, 
   {
