@@ -13,15 +13,15 @@ const BuildWithMe = ({ submit, result }) => {
           <input type="hidden" name="access_key" value='{accesskey || ""}' />
         </div>
         <div className="grid grid-flow-row gap-1 ">
-          <input type="text" name='fullname' placeholder='Enter Name'  className="h-10 px-3 text-[#0f112e] rounded-md bg-[#dcebe8] border-none"/>
+          <input type="text" name='fullname' placeholder='Enter Name'  className="h-10 px-3 text-[#0f112e] rounded-md bg-[#dcebe8] border-none" required/>
         </div>
         <div className="grid grid-flow-row gap-1 ">
-          <input type="email" name='email' placeholder='Enter valid Email'  className="h-10 px-3 text-[#0f112e] rounded-md bg-[#dcebe8] border-none"/>
+          <input type="email" name='email' placeholder='Enter valid Email'  className="h-10 px-3 text-[#0f112e] rounded-md bg-[#dcebe8] border-none" required/>
         </div>
         
         <div className=" grid grid-flow-row gap-1 ">
           <h3 className="">Briefly describe your project.</h3>
-          <textarea name="description"  placeholder="" className="bg-[#dcebe8] text-[#0f112e] px-3 h-32  rounded-md"></textarea>
+          <textarea name="description"  placeholder="" className="bg-[#dcebe8] text-[#0f112e] px-3 h-32  rounded-md" required></textarea>
         </div>
         
         <div className="flex justify-center">

@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&display=swap');
+
 @import "tailwindcss";
+
+body {
+  font-family: playfair;
+}
 
 .section {
   margin: 10px 20px 10px 20px;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.gravitas {
+  font-family: "Gravitas One", serif;
+  font-style: normal;
+}
+
+.garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }

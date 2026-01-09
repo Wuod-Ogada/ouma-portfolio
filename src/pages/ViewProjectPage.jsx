@@ -25,20 +25,16 @@ const ViewProjectPage = () => {
     <>
       <div>
         {project && (
-          <div className="m-8">
-            <div>Project Hero Section</div>
-            <div>
-              <p className="text-2xl md:text-3xl">{project.title}</p>
-              <div>objective</div>
+          <div className="m-8" >
+            <div className="h-[60vh] flex flex-col justify-between" style={{backgroundImage: `url(${project.image})`, backgroundSize: 'contain', 
+    backgroundPosition: 'center', backgroundRepeat: "no-repeat"}}>
+              <div >
+                <p className="text-2xl md:text-3xl text-center gravitas py-3">{project.title}</p>
+              </div>
+              <div className="text-center mb-10 bg-[#2addf58e] w-105 mx-auto rounded-md">
+                <button type="button" className="text-3xl">Book for Demo</button>
+              </div> 
             </div>
-            
-            <div>
-              {project.description.map((para, i)=>(
-                <p key={i} className="text-xl mb-1.5">
-                  {para}
-                </p>
-              ))}
-            </div> 
           
           </div>
         )}

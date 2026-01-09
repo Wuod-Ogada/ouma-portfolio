@@ -46,7 +46,7 @@ const accesskey= import.meta.env.VITE_CONTACT_ACCESS_KEY;
         <p>Let&apos;s build Greatness!</p>
       </div>
       <div className="md:flex md:ml-[-10%] items-center">
-        <div className="w-50 md:w-100 mx-auto object-contain">
+        <div className="w-50 md:w-85 mx-auto object-contain">
           <img src={collab} alt="collaboration" />
         </div>
         <div>
