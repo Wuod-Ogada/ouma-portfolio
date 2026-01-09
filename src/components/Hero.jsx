@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { developer } from "../assets/assets";
+import { developer, journal } from "../assets/assets";
 import { AnimatePresence, motion } from "framer-motion";
 
 
@@ -13,17 +13,18 @@ const Hero = () => {
       <AnimatePresence>
       <div className="md:w-[90%] md:mx-auto md:flex justify-between">
         <motion.div
-        className="block md:hidden bg-[#B99470] w-[280px] h-[380px] mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
+        className="block md:hidden bg-[#B99470] w-70 h-95 mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
           <img src={developer} alt="" className="w-full h-full object-cover" />
         </motion.div>
-        <motion.div className="mx-5 flex flex-col justify-center md:w-[60%] gap-5 mb-[20px]">
-          <div className=" hidden md:flex items-end">
-            <h3 className="pr-[5px] md:text-4xl font-extra">Welcome!</h3>
+        <motion.div className="mx-5 flex flex-col justify-center md:w-[60%] gap-5 mb-5">
+          <div className=" hidden md:flex items-end w-70 object-contain overflow-hidden">
+            {/* <h3 className="pr-1.25 md:text-4xl font-extra">Welcome!</h3> */}
+            <img src={journal} alt="" />
           </div>
           <div className="md:w-[90%]">
            <p className="text-2xl">A Fullstack developer dedicated to designing and building modern scalable applications.</p>
           </div>
-          <button onClick={()=> navigate('/define_the_project')} className="bg-[#B99470] w-[220px] py-3 px-4 rounded-md text-2xl">Work With Me!</button>
+          <button onClick={()=> navigate('/define_the_project')} className="bg-[#B99470] w-55 py-3 px-4 rounded-md text-2xl">Work With Me!</button>
           
         </motion.div>  
           

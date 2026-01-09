@@ -9,7 +9,7 @@ const About = () => {
     <section className="section py-10">
     <div className="md:w-3/4 mx-auto" id="About">
       <div className="">
-        <h2 className="text-center text-3xl md:text-3xl  my-6">About Me</h2>
+        <h2 className="text-center text-3xl md:text-3xl my-6 playfair">About Me</h2>
       </div>
       <div className=" bg-[#1E201E] w-full">
         <div className="items-center  bg-[#B99470] p-4">

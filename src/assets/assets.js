@@ -12,8 +12,9 @@ import wallet from "../assets/Images/wallet.jpg";
 import java from "../assets/Images/java.png";
 import developer from "../assets/Images/developer.png";
 import collab from "../assets/Images/collab.png";
+import journal from "../assets/Images/jcropped.png";
 
-export { logo, laki2, laki3, laki11, mysql2, jscript, developer, collab, nodejs, react, gear, trashcan, wallet }
+export { logo, laki2, laki3, laki11, mysql2,journal, jscript, developer, collab, nodejs, react, gear, trashcan, wallet }
 
 export const codingSkills = [
   {

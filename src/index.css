@@ -3,7 +3,12 @@
 @import "tailwindcss";
 
 body {
-  font-family: playfair;
+  margin: 0;
+  padding: 0;
+  background-color: #021526;
+  color: #F5F5F7;
+  font-family: garamond;
+  
 }
 
 .section {
@@ -13,17 +18,17 @@ body {
 .playfair {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
 
 .gravitas {
-  font-family: "Gravitas One", serif;
+  font-family: "Gravitas One";
   font-style: normal;
 }
 
 .garamond {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
