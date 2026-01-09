@@ -21,7 +21,7 @@ const Hero = () => {
             {/* <h3 className="pr-1.25 md:text-4xl font-extra">Welcome!</h3> */}
             <img src={journal} alt="" />
           </div>
-          <div className="md:w-[90%]">
+          <div className="md:w-[80%]">
            <p className="text-2xl">A Fullstack developer dedicated to designing and building modern scalable applications.</p>
           </div>
           <button onClick={()=> navigate('/define_the_project')} className="bg-[#B99470] w-55 py-3 px-4 rounded-md text-2xl">Work With Me!</button>
