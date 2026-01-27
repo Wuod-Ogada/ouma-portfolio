@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContactMe = () => {
 
-  const accesskey= import.meta.env.VITE_CONTACT_ACCESS_KEY;
+  const accesskey = import.meta.env.VITE_CONTACT_ACCESS_KEY;
   
   const [result, setResult] = React.useState("");
 
@@ -15,20 +15,25 @@ const ContactMe = () => {
   
     formData.append("access_key", accesskey);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
-    });
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
 
-    const data = await response.json();
-
-    if (data.success) {
+    if (res.success) {
       setResult("");
       toast.success("Message Submitted Successfully")
       event.target.reset();
     } else {
-      console.log("Error", data);
-      toast.error(data.message)
+      console.log("Error", res);
+      toast.error(res.message)
       setResult("");
     }
   };
