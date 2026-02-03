@@ -9,7 +9,7 @@ const navigate = useNavigate();
     <>
     <section className="flex flex-col justify-center">
       <div>
-        <h2 className="text-center text-3xl md:text-3xl my-5">Projects</h2>
+        <h2 className="text-center text-3xl md:text-3xl my-5 playfair">Projects</h2>
       </div>
       <div className="flex-col gap-5 w-[90%] mx-auto" id="Projects">
         {projectData.map((project, index) => (

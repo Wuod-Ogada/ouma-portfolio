@@ -1,45 +1,35 @@
-import logo from "../assets/Images/logo.png";
-import laki2 from "../assets/Images/laki2.png";
-import laki3 from "../assets/Images/laki3.png";
-import laki11 from "../assets/Images/laki11.png";
-import mysql2 from "../assets/Images/mysql2.png";
-import jscript from "../assets/Images/jscript.png";
-import nodejs from "../assets/Images/nodejs.png";
-import react from "../assets/Images/react.png";
-import gear from "../assets/Images/gear.jpg";
-import trashcan from "../assets/Images/trashcan.png";
-import wallet from "../assets/Images/wallet.jpg";
-import java from "../assets/Images/java.png";
-import developer from "../assets/Images/developer.png";
-import collab from "../assets/Images/collab.png";
-import journal from "../assets/Images/jcropped.png";
+import logo from "../assets/images/logo.png";
+import laki2 from "../assets/images/laki2.png";
+import laki3 from "../assets/images/laki3.png";
+import laki11 from "../assets/images/laki11.png";
+import collab from "../assets/images/collab.png";
 
-export { logo, laki2, laki3, laki11, mysql2,journal, jscript, developer, collab, nodejs, react, gear, trashcan, wallet }
+export { logo, laki2, laki3, laki11, collab }
 
 export const codingSkills = [
   {
     skill: "Javascript",
-    image: jscript,
+    image: "./images/jscript.png",
     
   },
   {
     skill: "MySQL",
-    image: mysql2,
+    image: "./images/mysql2.png",
     
   },
   {
     skill: "Node JS",
-    image: nodejs,
+    image: "./images/nodejs.png",
     
   },
   {
     skill: "React JS",
-    image: react,
+    image: "./images/react.png",
     
   },
   {
     skill: "java",
-    image: java,
+    image: "./images/java.png",
     
   },
 ]
@@ -47,7 +37,7 @@ export const codingSkills = [
 export const projectData = [
   {
     id: "makina",
-    image: gear,
+    image: "./images/gear.jpg",
     title: "Makina: Autosolutions",
     intro: "Streamlining the network between auto-service providers and clients. The platform provides a one-stop shop where individuals access autoparts and services fitting their needs. In addition, cients can seek book and get in-touch with vetted and well-rated service providers. ",
     description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. The intention is to improve the experience of vehicle owners while sourcing for services.",
@@ -56,7 +46,7 @@ export const projectData = [
   },
   {
     id: "container-rental",
-    image: trashcan,
+    image: "./images/trashcan.png",
     title: "Al Hawiyat - Waste Container Rental",
     intro: "A customer, order, and asset management system for a company offering waste management services.",
     description: [
@@ -68,7 +58,7 @@ export const projectData = [
   },
   {
     id: 'fulus',
-    image: wallet,
+    image: "./images/wallet.jpg",
     title: "Fulus",
     intro: "An application intended to guide users on financial management and investment plans",
     description: [

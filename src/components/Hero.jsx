@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { developer, journal } from "../assets/assets";
 import { AnimatePresence, motion } from "framer-motion";
 
 
@@ -14,12 +13,12 @@ const Hero = () => {
       <div className="md:w-[90%] md:mx-auto md:flex justify-between">
         <motion.div
         className="block md:hidden bg-[#B99470] w-70 h-95 mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
-          <img src={developer} alt="" className="w-full h-full object-cover" />
+          <img src="./images/developer.png" alt="" className="w-full h-full object-cover" />
         </motion.div>
         <motion.div className="mx-5 flex flex-col justify-center md:w-[60%] gap-5 mb-5">
           <div className=" hidden md:flex items-end w-70 object-contain overflow-hidden">
             {/* <h3 className="pr-1.25 md:text-4xl font-extra">Welcome!</h3> */}
-            <img src={journal} alt="" />
+            <img src="/images/jcropped.png" alt="" />
           </div>
           <div className="md:w-[80%]">
            <p className="text-2xl">A Fullstack developer dedicated to designing and building modern scalable applications.</p>
@@ -37,7 +36,7 @@ const Hero = () => {
 
             className="h-full" 
           >
-            <img src={developer} alt="" className="w-full h-full lg:ml-[-50%]" />
+            <img src="./images/developer.png" alt="" className="w-full h-full lg:ml-[-50%]" />
           </motion.div>
         </div>
 

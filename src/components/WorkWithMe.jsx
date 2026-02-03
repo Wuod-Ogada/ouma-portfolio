@@ -47,7 +47,7 @@ const accesskey= import.meta.env.VITE_CONTACT_ACCESS_KEY;
     <div className="flex flex-col items-center">
       <ToastContainer />
 
-      <div className="text-center text-2xl my-5">
+      <div className="text-center text-2xl my-5 playfair">
         <p>Let&apos;s build Greatness!</p>
       </div>
       <div className="md:flex md:ml-[-10%] items-center">
