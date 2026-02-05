@@ -37,7 +37,7 @@ export const codingSkills = [
 export const projectData = [
   {
     id: "makina",
-    image: "./images/gear.jpg",
+    image: "/images/gear.jpg",
     title: "Makina: Autosolutions",
     intro: "Streamlining the network between auto-service providers and clients. The platform provides a one-stop shop where individuals access autoparts and services fitting their needs. In addition, cients can seek book and get in-touch with vetted and well-rated service providers. ",
     description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. The intention is to improve the experience of vehicle owners while sourcing for services.",
@@ -46,7 +46,7 @@ export const projectData = [
   },
   {
     id: "container-rental",
-    image: "./images/trashcan.png",
+    image: "/images/trashcan.png",
     title: "Al Hawiyat - Waste Container Rental",
     intro: "A customer, order, and asset management system for a company offering waste management services.",
     description: [
@@ -58,7 +58,7 @@ export const projectData = [
   },
   {
     id: 'fulus',
-    image: "./images/wallet.jpg",
+    image: "./wallet.jpg",
     title: "Fulus",
     intro: "An application intended to guide users on financial management and investment plans",
     description: [

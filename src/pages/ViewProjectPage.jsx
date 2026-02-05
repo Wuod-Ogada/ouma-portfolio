@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom"
 const ViewProjectPage = () => {
 
   const { id } = useParams()
-  const { projectData } = useContext(PortfolioContext)
+  const { projectData } = useContext(PortfolioContext);
 
   const [project, setProject] = useState(null)
 

@@ -1,8 +1,12 @@
- import { NavLink, useNavigate } from "react-router-dom";
-import { projectData } from "../assets/assets";
+ import { useContext } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { PortfolioContext } from "../context/PortfolioContext";
+
 
 const Projects = () => {
 
+const { projectData } = useContext(PortfolioContext);
+  
 const navigate = useNavigate();
 
   return (
