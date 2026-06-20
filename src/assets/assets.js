@@ -6,9 +6,9 @@ import collab from "../assets/images/collab.png";
 import gear from "../assets/images/gear.jpg";
 import wallet from "../assets/images/wallet.jpg";
 import trashcan from "../assets/images/trashcan.png";
+import developer from "../assets/images/developer.png"
 
-
-export { logo, laki2, laki3, laki11, collab, gear, wallet, trashcan }
+export { logo, laki2, laki3, laki11, collab, gear, wallet, trashcan, developer }
 
 export const codingSkills = [
   {

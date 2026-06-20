@@ -12,13 +12,13 @@ const Hero = () => {
       <AnimatePresence>
       <div className="md:w-[90%] md:mx-auto md:flex justify-between">
         <motion.div
-        className="block md:hidden bg-[#B99470] w-70 h-95 mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
-          <img src="./images/developer.png" alt="" className="w-full h-full object-cover" />
+        className="md:hidden block bg-[#B99470] w-80 h-95 mx-auto my-9 rounded-t-2xl rounded-b-[30%] overflow-hidden">
+          <img src="./images/developer.png"alt="" className="w-full h-full object-cover" />
         </motion.div>
         <motion.div className="mx-5 flex flex-col justify-center md:w-[60%] gap-5 mb-5">
-          <div className=" hidden md:flex items-end w-70 object-contain overflow-hidden">
+          <div className="hidden md:flex w-70 object-contain overflow-hidden object-center">
             {/* <h3 className="pr-1.25 md:text-4xl font-extra">Welcome!</h3> */}
-            <img src="/images/jcropped.png" alt="" />
+            <img src="./images/jcropped.png" alt="" />
           </div>
           <div className="md:w-[80%]">
            <p className="text-2xl">A Fullstack developer dedicated to designing and building modern scalable applications.</p>
