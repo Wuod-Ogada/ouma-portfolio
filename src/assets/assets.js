@@ -43,6 +43,7 @@ export const projectData = [
     id: "makina",
     image: gear,
     title: "Makina: Autosolutions",
+    url: "",
     intro: "Streamlining the network between auto-service providers and clients. The platform provides a one-stop shop where individuals access autoparts and services fitting their needs. In addition, cients can seek book and get in-touch with vetted and well-rated service providers. ",
     description: ["The application aims to provide an avenue for vehicle owners to obtain services from one place. The intention is to improve the experience of vehicle owners while sourcing for services.",
     "Clients are able to search, order, and pre-order spare parts and other vehicle accessory. They can schedule for a shop visit to collect the item or request for deliveries. The platform will facilite transparency and client protection, through online transactions. The item listings will facilitate searching for items basing on part number, chasis number, vehicle model, and compatibility.",
@@ -51,7 +52,8 @@ export const projectData = [
   {
     id: "container-rental",
     image: trashcan,
-    title: "Al Hawiyat - Waste Container Rental",
+    title: "Get-a-Bucket: For Waste Container Rental",
+    url: "https://get-a-bucket.vercel.app/",
     intro: "A customer, order, and asset management system for a company offering waste management services.",
     description: [
       "This is a MERN Stack application project that aims to assist companies to keep track and update their orders. It aims to integrate an alternative communication portal for client and company interaction.It will provide an avenue for clients to place and monitor their order progress. Clients are able to download e-receipts and communicate with the dispatch or support team. In addition, It provides avenues to easily update clients on the delivery progress.",
@@ -64,6 +66,7 @@ export const projectData = [
     id: 'fulus',
     image: wallet,
     title: "Fulus",
+    url: "",
     intro: "An application intended to guide users on financial management and investment plans",
     description: [
       "The appication will have two plans. The free and the paid plan."
