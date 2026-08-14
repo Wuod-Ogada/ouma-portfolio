@@ -39,10 +39,10 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="section">
+    <section className="section" id="Contact_me">
       <ToastContainer />
       
-      <div className="" id="Contact_me">
+      <div className="" >
         <h2 className="text-xl text-center font-medium md:text-3xl">Contact Me!</h2>
         <div className=" ">
           <form onSubmit={onSubmit} className="mx-5 grid grid-flow-row gap-4 md:w-3/6 md:mx-auto">

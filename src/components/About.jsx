@@ -3,6 +3,30 @@ import CodingSkills from "./CodingSkills"
 
 const About = () => {
 
+   const expertise = {
+    developer: "Fullstack Web Developer",
+    coordinator: "Project Coordinator",
+    support: "IT Support Representative"
+  }
+
+const displayExpertise = () => {
+  const expertiseArray = Object.values(expertise);
+  let index = 0;
+
+   if (!expertiseArray.length) return;
+
+  const interval = setInterval(() => {
+    const expertiseElement = document.getElementById("expertise");  
+
+    if(!expertiseElement) return;
+
+    expertiseElement.textContent = expertiseArray[index];
+    index = (index + 1) % expertiseArray.length;
+  }, 4000);
+
+  return interval;
+
+}
    
   return (
     <>
@@ -16,6 +40,12 @@ const About = () => {
         
           <div className="md:flex justify-center">
             <CodingSkills />
+          </div>
+
+           <div className="text-center text-3xl">
+            <p id="expertise" className="text-4xl text-[#e4e7c0f5]">
+              {displayExpertise()}
+            </p>
           </div>
         </div>
 

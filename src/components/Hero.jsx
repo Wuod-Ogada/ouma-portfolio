@@ -6,7 +6,9 @@ const Hero = () => {
 
   const navigate = useNavigate();
 
-  return (
+ 
+
+return (
    <>
     <section className="section flex items-center">
       <AnimatePresence>
@@ -17,13 +19,15 @@ const Hero = () => {
             <img src="./images/jcropped.png" alt="" />
           </div>
           <div className="md:w-[80%]">
-           <p className="text-2xl">A Fullstack developer dedicated to designing and building modern scalable applications.</p>
+           <p className="text-[2rem] mb-3">Transforming Ideas into Valuable Digital Expereinces.<br/>
+            designing and building modern scalable applications.
+             </p>
           </div>
           <button onClick={()=> navigate('/define_the_project')} className="bg-[#B99470] w-55 py-3 px-4 rounded-md text-2xl">Work With Me!</button>
           
         </motion.div>  
           
-        <div className="md:w-1/3 bg-[#B99470] object-contain rounded-bl-md rounded-br-md ">
+        <div className="md:w-2/5 bg-[#B99470] object-contain rounded-bl-md rounded-br-md ">
           <motion.div
             initial = {{opacity:0, x: 200}}
             exit={{opacity:0, x: 200}}
