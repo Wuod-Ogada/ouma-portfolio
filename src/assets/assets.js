@@ -17,9 +17,17 @@ export const codingSkills = [
     
   },
   {
-    skill: "MySQL",
-    image: "./images/mysql2.png",
+    skill: "TypeScript",
+    image: "./images/typeScript.png",
     
+  },
+  {
+    skill: "React JS",
+    image: "./images/react.png",   
+  },
+  {
+    skill: "java",
+    image: "./images/java.png", 
   },
   {
     skill: "Node JS",
@@ -27,13 +35,13 @@ export const codingSkills = [
     
   },
   {
-    skill: "React JS",
-    image: "./images/react.png",
+    skill: "MySQL",
+    image: "./images/mysql.png",
     
   },
   {
-    skill: "java",
-    image: "./images/java.png",
+    skill: "Postgres",
+    image: "./images/postgres.png",
     
   },
 ]
@@ -79,28 +87,27 @@ export const experiences = [
     title: "Fullstack Web developer - Apprenticeship",
     organization: "Daktos Limited (https://daktos.org/)",
     location: "Nairobi, Kenya",
-    duration: "Jan, 2022 - Feb, 2024",
+    duration: "Jan 2024 - Aug 2025",
     skills : [ 
         "Attention to details", "Error handling and End-to-End testing", "Critical thinking", "Effective communication"
     ],
     roles: [
-      "Created simple frontend to backend connection using RESTful API",
+      "Developed re-usable components, such as design tokens, to facilitate efficiency and time-management.",
       "Collaborated with my mentor and managed my codebase using Git and GitHub.",
       "Developed re-usable components to facilitate efficiency and time-management.",
-      "Build and deployed a waste-management web applicattion built on ReactJS and NodeJS.",
-      "utilized prisma for efficiency and type-safety features to maintain the postgres database",
-      "Managed to implement JWT authenitication and cookies for controlled access and routing to prevent data leaks.",
-      "utilized the contextAPI for route protection and state management.",
+      "Optimized UI performance by implementing lazy loading and minimizing components re-rendering.",
+      "Implemented JWT authentication and cookies for controlled access and routing to prevent data leaks.",
+      "utilized the contextAPI and Redux Toolkit for state management.",
       "utilized Postman and REST Client for API testing to ensure functionality and to ensure the intended data is being accessed. ",
-      "Contributed to the development of Volunteer Management Systems for the Kenya Red Cross Society and the Somaliland Red Crescent Society.",
-      "Currently, I am learning how to implement microservices and utilize tools such as Kafka, Redis, and RabbitMq"
+      "Contributed in the development of Volunteer Management Systems for the Kenya Red Cross Society and the Somaliland Red Crescent Society.",
+      "Build and shipped a PERN stack waste management SaaS to assist companies offer their services and manage their customers. Also, it facilitates clients to easily place and manage their orders"
     ],
   }, 
   {
     title: "Project Coordinator",
     organization: "Digital Telematics LTD",
     location: "Nairobi, Kenya",
-    duration: "Oct, 2018 - Nov, 2021",
+    duration: "Oct 2020 - Nov 2023",
     skills : [
       "Project documentation", "Project Management", "Logistics", "Budgeting", "Administrative Support", 
     ],
@@ -117,7 +124,7 @@ export const experiences = [
     title: "Technical Support Representative",
     organization: "Digital Telematics LTD",
     location: "Nairobi, Kenya",
-    duration: "Mar, 2018 - Sep, 2018",
+    duration: "Mar 2018 - Sep 2020",
     skills : [
       "Clear and Effective Communication", "Understanding Computers and Technology", "Wireless Device configuration", "Excellent Customer Service Skills",
     ],

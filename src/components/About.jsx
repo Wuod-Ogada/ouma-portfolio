@@ -1,33 +1,33 @@
+import { useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import CodingSkills from "./CodingSkills"
 
 const About = () => {
 
-   const expertise = {
-    developer: "Fullstack Web Developer",
-    coordinator: "Project Coordinator",
-    support: "IT Support Representative"
-  }
+  const displayExpertise = () => {
+    
+    const expertise = {
+      developer: "Fullstack Web Developer",
+      coordinator: "Project Coordinator",
+      support: "IT Support Representative"
+    }
 
-const displayExpertise = () => {
-  const expertiseArray = Object.values(expertise);
-  let index = 0;
+    const values = Object.values(expertise);
+    let i=0;
 
-   if (!expertiseArray.length) return;
+    const interval = setInterval(() => {
+      i = (i + 1) % values.length;
+      document.getElementById("expertise").innerHTML = values[i];
 
-  const interval = setInterval(() => {
-    const expertiseElement = document.getElementById("expertise");  
+    }, 3000);
 
-    if(!expertiseElement) return;
-
-    expertiseElement.textContent = expertiseArray[index];
-    index = (index + 1) % expertiseArray.length;
-  }, 4000);
-
-  return interval;
-
+    return () => clearInterval(interval);
 }
-   
+
+useEffect(() => {
+  displayExpertise();
+}, []);
+
   return (
     <>
     <section className="section py-10">
@@ -42,8 +42,8 @@ const displayExpertise = () => {
             <CodingSkills />
           </div>
 
-           <div className="text-center text-3xl">
-            <p id="expertise" className="text-4xl text-[#e4e7c0f5]">
+           <div className="h-20 text-center text-3xl md:text-4xl flex items-center justify-center shadow-2xl">
+            <p id="expertise" className=" text-[#e4e7c0f5]">
               {displayExpertise()}
             </p>
           </div>
